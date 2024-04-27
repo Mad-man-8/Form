@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tutorial 4
+        </title>
+    </head>
+    <style>
+        h1{text-align: center;}
+        legend{background-color: azure;}
+        label{margin-bottom: 20px;}
+        textarea{display: block;}
+        fieldset{border-radius: 10px; padding: 50px; border: 1px solid #000000;}
+        button{width: 160px; height: 40px; font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;  border: 1px solid #000000;}
+        button:active{background-color: #000000;
+        box-shadow: 0 5px #66ff2a;
+        transform: translateX(50px);}
+        button:hover{transform: translatey(5px);}
+        button{cursor: pointer;}
+        input{vertical-align: top;}
+        input:required::before {
+    content: ' *';
+    color: red;
+  }
+        
+            
+    </style>
+    
+    <body style="background-color: rgb(23, 9, 75);">
+        <video autoplay muted loop width="1000" height="600" controls style="margin: 0 auto; display: block;">
+            <source  src="Hotel.mp4" type="video/mp4"> 
+            </video>
+        <h1 style="color: cornsilk;">Hotel Reservation</h1>
+        <form action="mailto:eshen.josif@outlook.com" method="post" enctype="text/plain">
+        <fieldset style="background-color: rgb(136, 136, 220);">
+            <legend><b>Personal Details</b></legend>
+            <label for="fname">First name: </label>
+            <input type="text" name="fname" id="fname" Enter style="margin-left: 49px;" required placeholder="Name"> 
+            <br>    
+            <label for="sname">Surname: </label>
+            <input type="text" name="sname" id="sname" style="margin-left: 60px;" placeholder="Surname">
+            <br>
+            <label for="email">Email address: </label>
+            <input type="text" name="email" id="email" style="margin-left: 27px;"required placeholder="e-mail">
+            <br>
+            <label for="pwd">Set up a password: </label>
+            <input type="password" name="pwd" id="pwd" style="margin-left: 1px;"required placeholder="Password">
+            <br>
+        </fieldset>
+<br>
+        <fieldset style="background-color: bisque;">
+            <legend><b>Booking Details</b></legend>
+            <label for="CheckinDay">Checkin Day: </label>
+            <input type="date" name="CheckinDay" id="CheckinDay" style="margin-left: 20px;"required>
+            <br>
+            <label for="NumDays">Number of days:</label>
+            <input type="number" name="NumDays" id="NumDays" style="margin-left: 2px;"required placeholder="1">
+            <label>
+                <br><br>
+<input  type="radio" name="room" id="single">Single room <br>
+<br>
+<input  type="radio" name="room" id="double">Double room <br>
+<br>
+<input  type="radio" name="room" id="king">King room <br>
+            </label><br>
+            <label for="meals">Breakfast</label>
+            <select list="breakfast" name="meals" id="meals">
+                <option value="include">Include</option>
+                <option value="exclude">Exclude</option>
+                </select><br>
+            <label for="special">Special requirements: </label>
+            <textarea type="text" name="special" id="special" rows="6" placeholder="Anything you want to add..."></textarea>
+        </fieldset>
+        <br>
+        <fieldset style="background-color: blueviolet;">
+           
+            <button type="reset" style="background-color: crimson;">Reset</button>
+            <button type="submit" style="background-color: aquamarine; margin: 0 auto; display: block;">Send</button>
+        </fieldset>
+        
+    </form>
+    <hr>
+    <a href="mailto:eshen.20231431@iit.ac.lk"><address style="color: azure;">eshen.20231431@iit.ac.lk</address></a>
+    <p style="color: azure;">Last modified: 23<sup>rd</sup> Feb 2024</p>
+    </body>
+</html>
